@@ -23,7 +23,7 @@ email: kcc91600@byu.edu
 description: "Tutorials and information to make you more successful in data science." 
 baseurl: "/blog386" # the name of the repository 
 url: "https://kylieclinton.github.io" #  change this to "https://<your-github-username>.github.io"
-image: "https://unsplash.com/photos/a-group-of-trees-with-yellow-leaves-on-them-zG8VFOg7wgo"
+image: "assets/images/marek-piwnicki-fj8VUuDl1Rs-unsplash.jpg"
 author: Kylie Clinton
 copyright: KC # Your initials or what you want the copyright to be.  Leave empty for no copyright
 footer_description: 
