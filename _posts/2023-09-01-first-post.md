@@ -8,6 +8,8 @@ image: "assets/images/eberhard-grossgasteiger-zG8VFOg7wgo-unsplash.jpg"
 ## Introduction
 Data visualization has taken the world by storm in recent years. Everyone wants their data to be presented in an engaging, easy-to-understand way. It allows us to analyze complex data, identify patterns, and extract valuable insights. It enables decision-makers to look at the simplified data and quickly make informed and accurate decisions. The boom in data visualization tools has made it easier for coders and non-coders alike to present data in a visually appealing way.
 
+![Data Viz]([https://github.com/kylieclinton/blog386/blob/main/assets/images/top_10_countries_bar.png](https://github.com/kylieclinton/blog386/blob/main/assets/images/lukas-blazek-mcSDtbWXUZU-unsplash.jpg))
+
 This tutorial will focus on three of those tools and compare setup, syntax, and results so you can decide which tools you would like to use. The three I will be focusing on are python packages Matplotlib and seaborn, R package ggplot2, and Tableau. For this tutorial, I will be using the [World Instant Noodles Consumption 2022]([https://statistics.byu.edu](https://www.kaggle.com/datasets/fortuneuwha/world-instant-noodles-consumption-2022/)) dataset.
 ## Python
 Python has several packages developed to make data visualization easier. Two of the most popular are Matplotlib and Seaborn. Matplotlib is the base-level package for data visualization in python. It is highly customizable, can have a steep learning curve, and primarily makes static plots but can also do interactive plots.
@@ -47,7 +49,7 @@ To make the bar plot, follow the code below:
 plt.figure(figsize=(12, 6))
 sns.barplot(x='2022', y='Country/Region', data=top_10_countries, palette='viridis')
 plt.title('Top 10 Countries with Highest Instant Noodles Consumption (2022)')
-plt.xlabel('Consumption (Billion Servings) in 2022')
+plt.xlabel('Consumption in 2022')
 plt.ylabel('Country/Region')
 plt.grid(axis='x')
 plt.show()
@@ -60,7 +62,7 @@ To make the box plot, follow the code below:
 plt.figure(figsize=(10, 6))
 sns.boxplot(x='2022', data=top_10_countries, color='royalblue')
 plt.title('Box Plot of Instant Noodles Consumption (2022) for Top 10 Countries')
-plt.xlabel('Consumption (Billion Servings) in 2022')
+plt.xlabel('Consumption in 2022')
 plt.grid(axis='x')
 plt.show()
 ```
@@ -72,3 +74,39 @@ To save your plots as a .png or other filetype, you can use the following code:
 plt.savefig('top_10_countries_bar.png', format='png')
 plt.savefig('top_10_countries_box.png', format='png')
 ```
+
+## R
+(write info about data viz in R and the packages that work with it.)
+
+### Step 1: Load Libraries and Data
+Say something here
+
+```
+library(ggplot2)
+library(dplyr)
+```
+## Step 2: Filter the Data
+say something here
+```
+
+```
+
+## Step 3: Create the Bar and Box Plots
+say something here
+```
+
+```
+
+To save your plots, use the following syntax:
+```
+
+```
+
+## Tableau??
+Should I do Tableau or should I not worry about it for word count?
+
+
+## Compare and Contrast
+
+
+## Conclusion
