@@ -80,26 +80,57 @@ plt.savefig('top_10_countries_box.png', format='png')
 
 ### Step 1: Load Libraries and Data
 Say something here
-
 ```
 library(ggplot2)
 library(dplyr)
+
+data <- read.csv("noodles.csv")
 ```
 ### Step 2: Filter the Data
 say something here
 ```
-
+top_10 <- data %>%
+  arrange(desc(`2022`)) %>%
+  head(10)
 ```
 
 ### Step 3: Create the Bar and Box Plots
 say something here
 ```
-
+bar_plot <- ggplot(top_10, aes(x = reorder(`Country/Region`, -`2022`), y = `2022`)) +
+  geom_bar(stat = "identity", fill = "skyblue") +
+  labs(title = "Top 10 Countries with Highest Instant Noodles Consumption (2022)",
+       x = "Country",
+       y = "Consumption (Billion Servings)") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+print(bar_plot)
 ```
+![Bar Plot](https://github.com/kylieclinton/blog386/blob/main/assets/images/top_10_countries_bar_r.png)
+
+Create the box plot:
+```
+box_plot <- ggplot(top_10, aes(x = `Country/Region`, y = `2022`)) +
+  geom_boxplot(fill = "lightgreen", color = "darkgreen") +
+  labs(title = "Instant Noodles Consumption (2022) for Top 10 Countries",
+       x = "Country",
+       y = "Consumption (Billion Servings)") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+print(box_plot)
+```
+
+![Box Plot](https://github.com/kylieclinton/blog386/blob/main/assets/images/top_10_countries_box_r.png)
 
 To save your plots, use the following syntax:
 ```
+png("top_10_countries_bar.png", width = 800, height = 400)
+print(bar_plot)
+dev.off()
 
+png("top_10_countries_box.png", width = 800, height = 400)
+print(box_plot)
+dev.off()
 ```
 
 ## Tableau??
