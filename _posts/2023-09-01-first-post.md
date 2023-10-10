@@ -52,7 +52,7 @@ plt.ylabel('Country/Region')
 plt.grid(axis='x')
 plt.show()
 ```
-![top_10_countries_bar]({{github.com.kylieclinton/blog386}}/{{[site.baseurl](https://kylieclinton.github.io/blog386/)}}/assets/images/top_10_countries_bar.png)
+![Bar Plot](https://github.com/kylieclinton/blog386/blob/main/assets/images/top_10_countries_bar.png)
 
 To make the box plot, follow the code below:
 
@@ -64,7 +64,7 @@ plt.xlabel('Consumption (Billion Servings) in 2022')
 plt.grid(axis='x')
 plt.show()
 ```
-![top_10_countries_box]({{github.com.kylieclinton/blog386}}/{{[site.baseurl](https://kylieclinton.github.io/blog386/)}}/assets/images/top_10_countries_box.png)
+![Box Plot](https://github.com/kylieclinton/blog386/blob/main/assets/images/top_10_countries_box.png)
 
 To save your plots as a .png or other filetype, you can use the following code:
 
