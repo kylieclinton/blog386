@@ -19,45 +19,57 @@ Using the dataset above, we can use these packages to create appealing data visu
 ### Step 1: Load the Data
 Before loading the data, make sure you have the proper packages installed by running this code into your terminal.
 
-`pip install matplotlib seaborn pandas`
+```
+pip install matplotlib seaborn pandas
+```
 
 Once your packages are installed, you can load the data in python.
 
-`import pandas as pd
+```
+import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-data = pd.read_csv("instant-noodles-consumption-2022.csv")`
+data = pd.read_csv("instant-noodles-consumption-2022.csv")
+```
 
 ### Step 2: Prepare the Data
 Preparing your data is important before making visualizations. This step can include cleaning data, sorting it, removing duplicates, and making data types consistent. In this example, we will select the Year variable and the Consumption (Billion Servings) variable to make our graphs.
 
-`years = data['Year']
+```
+years = data['Year']
 
-consumption = data['Consumption (Billion Servings)']`
+consumption = data['Consumption (Billion Servings)']
+```
 
 ### Step 3: Create a Line Plot and Scatter Plot
 To make the line plot, follow the code below:
 
-`plt.figure(figsize=(10, 6))
+```
+plt.figure(figsize=(10, 6))
 plt.plot(years, consumption, marker='o', linestyle='-')
 plt.title('World Instant Noodles Consumption (2022)')
 plt.xlabel('Year')
 plt.ylabel('Consumption (Billion Servings)')
 plt.grid(True)
-plt.show()`
+plt.show()
+```
 
 To make the scatter plot, follow the code below:
 
-`plt.figure(figsize=(10, 6))
+```
+plt.figure(figsize=(10, 6))
 plt.scatter(years, consumption, marker='o')
 plt.title('World Instant Noodles Consumption (2022)')
 plt.xlabel('Year')
 plt.ylabel('Consumption (Billion Servings)')
 plt.grid(True)
-plt.show()`
+plt.show()
+```
 
 To save your plots as a .jpg or other filetype, you can use the following code:
 
-`plt.savefig('line_plot.jpg', format='jpg')
-plt.savefig('scatter_plot.jpg, format='jpg')`
+```
+plt.savefig('line_plot.jpg', format='jpg')
+plt.savefig('scatter_plot.jpg, format='jpg')
+```
