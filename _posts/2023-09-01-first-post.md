@@ -16,7 +16,7 @@ Seaborn is built on top of Matplotlib and makes more aesthetically pleasing plot
 
 Using the dataset above, we can use these packages to create appealing data visualizations.
 
-### Step 1: Load the Data
+### Step 1: Import Libraries and Load the Data
 Before loading the data, make sure you have the proper packages installed by running this code into your terminal.
 
 ```
@@ -30,46 +30,45 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-data = pd.read_csv("instant-noodles-consumption-2022.csv")
+data = pd.read_csv("noodles.csv")
 ```
 
 ### Step 2: Prepare the Data
-Preparing your data is important before making visualizations. This step can include cleaning data, sorting it, removing duplicates, and making data types consistent. In this example, we will select the Year variable and the Consumption (Billion Servings) variable to make our graphs.
+Preparing your data is important before making visualizations. This step can include cleaning data, sorting it, removing duplicates, and making data types consistent. In this example, we will select the top 10 countries after sorting the data in descending order.
 
 ```
-years = data['Year']
-
-consumption = data['Consumption (Billion Servings)']
+top_10_countries = data.sort_values(by='2022', ascending=False).head(10)
 ```
 
-### Step 3: Create a Line Plot and Scatter Plot
-To make the line plot, follow the code below:
+### Step 3: Create a Bar Plot and Box Plot
+To make the bar plot, follow the code below:
+
+```
+plt.figure(figsize=(12, 6))
+sns.barplot(x='2022', y='Country/Region', data=top_10_countries, palette='viridis')
+plt.title('Top 10 Countries with Highest Instant Noodles Consumption (2022)')
+plt.xlabel('Consumption (Billion Servings) in 2022')
+plt.ylabel('Country/Region')
+plt.grid(axis='x')
+plt.show()
+```
+![top_10_countries_bar](assets/images/top_10_countries_bar.png)
+
+To make the box plot, follow the code below:
 
 ```
 plt.figure(figsize=(10, 6))
-plt.plot(years, consumption, marker='o', linestyle='-')
-plt.title('World Instant Noodles Consumption (2022)')
-plt.xlabel('Year')
-plt.ylabel('Consumption (Billion Servings)')
-plt.grid(True)
+sns.boxplot(x='2022', data=top_10_countries, color='royalblue')
+plt.title('Box Plot of Instant Noodles Consumption (2022) for Top 10 Countries')
+plt.xlabel('Consumption (Billion Servings) in 2022')
+plt.grid(axis='x')
 plt.show()
 ```
+![top_10_countries_box](assets/images/top_10_countries_box.png)
 
-To make the scatter plot, follow the code below:
-
-```
-plt.figure(figsize=(10, 6))
-plt.scatter(years, consumption, marker='o')
-plt.title('World Instant Noodles Consumption (2022)')
-plt.xlabel('Year')
-plt.ylabel('Consumption (Billion Servings)')
-plt.grid(True)
-plt.show()
-```
-
-To save your plots as a .jpg or other filetype, you can use the following code:
+To save your plots as a .png or other filetype, you can use the following code:
 
 ```
-plt.savefig('line_plot.jpg', format='jpg')
-plt.savefig('scatter_plot.jpg, format='jpg')
+plt.savefig('top_10_countries_bar.png', format='png')
+plt.savefig('top_10_countries_box.png', format='png')
 ```
