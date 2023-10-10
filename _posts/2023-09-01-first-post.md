@@ -8,7 +8,7 @@ image: "assets/images/eberhard-grossgasteiger-zG8VFOg7wgo-unsplash.jpg"
 ## Introduction
 Data visualization has taken the world by storm in recent years. Everyone wants their data to be presented in an engaging, easy-to-understand way. It allows us to analyze complex data, identify patterns, and extract valuable insights. It enables decision-makers to look at the simplified data and quickly make informed and accurate decisions. The boom in data visualization tools has made it easier for coders and non-coders alike to present data in a visually appealing way.
 
-![Data Viz](https://github.com/kylieclinton/blog386/blob/main/assets/images/lukas-blazek-mcSDtbWXUZU-unsplash.jpg)
+![Data Viz](/main/assets/images/lukas-blazek-mcSDtbWXUZU-unsplash.jpg)
 
 This tutorial will focus on three of those tools and compare setup, syntax, and results so you can decide which tools you would like to use. The three I will be focusing on are python packages Matplotlib and seaborn, R package ggplot2, and Tableau. For this tutorial, I will be using the [World Instant Noodles Consumption 2022]([https://statistics.byu.edu](https://www.kaggle.com/datasets/fortuneuwha/world-instant-noodles-consumption-2022/)) dataset.
 ## Python
@@ -54,7 +54,7 @@ plt.ylabel('Country/Region')
 plt.grid(axis='x')
 plt.show()
 ```
-![Bar Plot](https://github.com/kylieclinton/blog386/blob/main/assets/images/top_10_countries_bar.png)
+![Bar Plot](/main/assets/images/top_10_countries_bar.png)
 
 To make the box plot, follow the code below:
 
@@ -66,7 +66,7 @@ plt.xlabel('Consumption in 2022')
 plt.grid(axis='x')
 plt.show()
 ```
-![Box Plot](https://github.com/kylieclinton/blog386/blob/main/assets/images/top_10_countries_box.png)
+![Box Plot](/main/assets/images/top_10_countries_box.png)
 
 To save your plots as a .png or other filetype, you can use the following code:
 
@@ -106,7 +106,7 @@ bar_plot <- ggplot(top_10, aes(x = reorder(`Country/Region`, -`2022`), y = `2022
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 print(bar_plot)
 ```
-![Bar Plot](https://github.com/kylieclinton/blog386/blob/main/assets/images/top_10_countries_bar_r.png)
+![Bar Plot](/main/assets/images/top_10_countries_bar_r.png)
 
 Create the box plot:
 ```
@@ -120,7 +120,7 @@ box_plot <- ggplot(top_10, aes(x = `Country/Region`, y = `2022`)) +
 print(box_plot)
 ```
 
-![Box Plot](https://github.com/kylieclinton/blog386/blob/main/assets/images/top_10_countries_box_r.png)
+![Box Plot](/main/assets/images/top_10_countries_box_r.png)
 
 To save your plots, use the following syntax:
 ```
