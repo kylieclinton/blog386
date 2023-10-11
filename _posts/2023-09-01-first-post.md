@@ -10,9 +10,9 @@ Data visualization has taken the world by storm in recent years. Everyone wants 
 
 ![Data Viz](/assets/images/lukas-blazek-mcSDtbWXUZU-unsplash.jpg)
 
-This tutorial will focus on three of those tools and compare setup, syntax, and results so you can decide which tools you would like to use. The three I will be focusing on are python packages Matplotlib and seaborn, R package ggplot2, and Tableau. For this tutorial, I will be using the [World Instant Noodles Consumption 2022]([https://statistics.byu.edu](https://www.kaggle.com/datasets/fortuneuwha/world-instant-noodles-consumption-2022/)) dataset.
+This tutorial will focus on three of those tools and compare setup, syntax, and results so you can decide which tools you would like to use. The three I will be focusing on are Python packages Matplotlib and seaborn, R package ggplot2, and Tableau. For this tutorial, I will be using the [World Instant Noodles Consumption 2022]([https://statistics.byu.edu](https://www.kaggle.com/datasets/fortuneuwha/world-instant-noodles-consumption-2022/)) dataset.
 ## Python
-Python has several packages developed to make data visualization easier. Two of the most popular are Matplotlib and Seaborn. Matplotlib is the base-level package for data visualization in python. It is highly customizable, can have a steep learning curve, and primarily makes static plots but can also do interactive plots.
+Python has several packages developed to make data visualization easier. Two of the most popular are Matplotlib and Seaborn. Matplotlib is the base-level package for data visualization in Python. It is highly customizable, can have a steep learning curve, and primarily makes static plots but can also do interactive plots.
 
 Seaborn is built on top of Matplotlib and makes more aesthetically pleasing plots. It specializes in statistical plotting and works seamlessly with Pandas dataframes. It also simplifies the process of making visualizations and quickly generates informative statistical plots.
 
@@ -25,7 +25,7 @@ Before loading the data, make sure you have the proper packages installed by run
 pip install matplotlib seaborn pandas
 ```
 
-Once your packages are installed, you can load the data in python.
+Once your packages are installed, you can load the data in Python.
 
 ```
 import pandas as pd # loading pandas
@@ -43,7 +43,7 @@ top_10_countries = data.sort_values(by='2022', ascending=False).head(10)
 ```
 
 ### Step 3: Create a Bar Plot and Box Plot
-Before making the plots, note that python has various colors and palettes to choose from for further customization. Additionally, you can save your plot as a value, but it might require some minor code changes. To make the bar plot, follow the code below:
+Before making the plots, note that Python has various colors and palettes to choose from for further customization. Additionally, you can save your plot as a value, but it might require some minor code changes. To make the bar plot, follow the code below:
 
 ```
 plt.figure(figsize=(12, 6))
@@ -76,10 +76,10 @@ plt.savefig('top_10_countries_box.png', format='png')
 ```
 
 ## R
-R is a great tool for data scientists. It is built to interpret data graphically, making it easy to create visualizations with the programming language. R has a base graphical library loaded to make visualizations simply, but this tutorial will focus on one of the optional libraries, ggplot2. Ggplot2 is a coherent system for building and describing graphs. The syntax can be longer than the base R graphics, but it gives more room for creativity and aesthetics. To show the similarities and differences in making visualizations in python vs. R, the below steps will show how to make the same kind of graphs as above in python.
+R is a great tool for data scientists. It is built to interpret data graphically, making it easy to create visualizations with the programming language. R has a base graphical library loaded to make visualizations simply, but this tutorial will focus on one of the optional libraries, ggplot2. Ggplot2 is a coherent system for building and describing graphs. The syntax can be longer than the base R graphics, but it gives more room for creativity and aesthetics. To show the similarities and differences in making visualizations in Python vs. R, the below steps will show how to make the same kind of graphs as above in Python.
 
 ### Step 1: Load Libraries and Data
-Just as in python, we need to start by loading the libraries we need to make our graphs, and loading the data. The dplyr library makes syntax more straightforward to use, and ggplot2 will help us make our graphs.
+Just as in Python, we need to start by loading the libraries we need to make our graphs, and loading the data. The dplyr library makes syntax more straightforward to use, and ggplot2 will help us make our graphs.
 ```
 library(ggplot2) # graphics package
 library(dplyr) # consistent and clear syntax
@@ -95,7 +95,7 @@ top_10 <- data %>%
 ```
 
 ### Step 3: Create the Bar and Box Plots
-In R, it is best practice to save plots and graphs as values to reference later. The same can be done in python. R has a variety of colors and themes to choose from to further customize your visualizations. Below is the code to make the bar and box plots. Note: when loading data into R, sometimes symbols in variable names will change. Make sure to look at your data before listing variables to best avoid errors.
+In R, it is best practice to save plots and graphs as values to reference later. The same can be done in Python. R has a variety of colors and themes to choose from to further customize your visualizations. Below is the code to make the bar and box plots. Note: when loading data into R, sometimes symbols in variable names will change. Make sure to look at your data before listing variables to best avoid errors.
 
 Create the Bar Plot:
 ```
@@ -135,6 +135,29 @@ dev.off()
 ```
 
 ## Compare and Contrast
+Let's delve into what makes the Python and R tools we used in the tutorial similar and different.
 
+### Differences
+- Approach and Syntax
+  - Seaborn and Matplotlib work together since Seaborn is built on Matplotlib.
+  - Seaborn is a high-level interface for creating aesthetically pleasing graphics.
+  - Matplotlib is a low-level library that offers detailed control over plots and is versatile.
+  - ggplot2 has a "grammar of graphics" approach is built aroung consistent logical approaches for plot creation, and can create complex plots with less code.
+- Default Aesthetics
+  - Seaborn has good default aesthetics and is suitable to make quick, attractive visualizations (especially statistical visualizations).
+  - Matplotlib has good control but weaker default aesthetics compared to Seaborn, requiring more customization for aesthetic plots.
+  - ggplot2 is flexible with aesthetics and requires less tweaking to make attractive plots than Matplotlib but potentially more code than Seaborn.
+- Ecosystem
+  - In Python, Matplotlib and Seaborn are part of a broad ecosystem of data science and visualization libraries.
+  - In R, ggplot2 is part of the R ecosystem and provides seamless integration with other R libraries.
+
+### Similarities
+- Customization
+  - Both the Python and R packages and libraries have high degrees of customization.
+  - You can adjust colors, labels, legends, sizing, and more
+- Community Documentation
+  - Both tools have active communities with extensive documentation
+  - You can easily find help and examples of using the tools.
 
 ## Conclusion
+The tools discussed in this tutorial barely scratches the surface to all the data visualization tools available. Python and R are some of the most common tools used in the data science world, but there is still more to discover. Explore different tools such as Tableau, Power BI, plotly in Python, D3.js, Excel, and QlikView/Qlik Sense. Explore other tools and experiment with the unique features they offer. Continue to practice your Python and R data visualizing skills. The data science world is adapting quickly, so keep learning and innovating!
