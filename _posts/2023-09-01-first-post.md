@@ -5,7 +5,7 @@ author: Kylie Clinton
 description: Compare different data visualization tools and pros/cons to each.
 image: "assets/images/eberhard-grossgasteiger-zG8VFOg7wgo-unsplash.jpg"
 --- 
-## Introduction
+## ~Introduction~
 Data visualization has taken the world by storm in recent years. Everyone wants their data to be presented in an engaging, easy-to-understand way. It allows us to analyze complex data, identify patterns, and extract valuable insights. It enables decision-makers to look at the simplified data and quickly make informed and accurate decisions. The boom in data visualization tools has made it easier for coders and non-coders alike to present data in a visually appealing way.
 
 ![Data Viz](/assets/images/lukas-blazek-mcSDtbWXUZU-unsplash.jpg)
