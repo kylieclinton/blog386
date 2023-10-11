@@ -11,7 +11,7 @@ Data visualization has taken the world by storm in recent years. Everyone wants 
 ![Data Viz](/assets/images/lukas-blazek-mcSDtbWXUZU-unsplash.jpg)
 
 This tutorial will focus on three of those tools and compare setup, syntax, and results so you can decide which tools you would like to use. The three I will be focusing on are Python packages Matplotlib and seaborn, R package ggplot2, and Tableau. For this tutorial, I will be using the [World Instant Noodles Consumption 2022]([https://statistics.byu.edu](https://www.kaggle.com/datasets/fortuneuwha/world-instant-noodles-consumption-2022/)) dataset.
-## Python
+## ~Python~
 Python has several packages developed to make data visualization easier. Two of the most popular are Matplotlib and Seaborn. Matplotlib is the base-level package for data visualization in Python. It is highly customizable, can have a steep learning curve, and primarily makes static plots but can also do interactive plots.
 
 Seaborn is built on top of Matplotlib and makes more aesthetically pleasing plots. It specializes in statistical plotting and works seamlessly with Pandas dataframes. It also simplifies the process of making visualizations and quickly generates informative statistical plots.
@@ -75,7 +75,7 @@ plt.savefig('top_10_countries_bar.png', format='png')
 plt.savefig('top_10_countries_box.png', format='png')
 ```
 
-## R
+## ~R~
 R is a great tool for data scientists. It is built to interpret data graphically, making it easy to create visualizations with the programming language. R has a base graphical library loaded to make visualizations simply, but this tutorial will focus on one of the optional libraries, ggplot2. Ggplot2 is a coherent system for building and describing graphs. The syntax can be longer than the base R graphics, but it gives more room for creativity and aesthetics. To show the similarities and differences in making visualizations in Python vs. R, the below steps will show how to make the same kind of graphs as above in Python.
 
 ### Step 1: Load Libraries and Data
@@ -134,7 +134,7 @@ print(box_plot)
 dev.off()
 ```
 
-## Compare and Contrast
+## ~Compare and Contrast~
 Let's delve into what makes the Python and R tools we used in the tutorial similar and different.
 
 ### Differences
@@ -159,5 +159,5 @@ Let's delve into what makes the Python and R tools we used in the tutorial simil
   - Both tools have active communities with extensive documentation
   - You can easily find help and examples of using the tools.
 
-## Conclusion
+## ~Conclusion~
 The tools discussed in this tutorial barely scratches the surface to all the data visualization tools available. Python and R are some of the most common tools used in the data science world, but there is still more to discover. Explore different tools such as Tableau, Power BI, plotly in Python, D3.js, Excel, and QlikView/Qlik Sense. Explore other tools and experiment with the unique features they offer. Continue to practice your Python and R data visualizing skills. The data science world is adapting quickly, so keep learning and innovating!
