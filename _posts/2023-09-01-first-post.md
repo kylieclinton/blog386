@@ -28,9 +28,9 @@ pip install matplotlib seaborn pandas
 Once your packages are installed, you can load the data in python.
 
 ```
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+import pandas as pd # loading pandas
+import matplotlib.pyplot as plt # load plotting packages
+import seaborn as sns # loading seaborn packages for plotting
 
 data = pd.read_csv("noodles.csv")
 ```
@@ -43,7 +43,7 @@ top_10_countries = data.sort_values(by='2022', ascending=False).head(10)
 ```
 
 ### Step 3: Create a Bar Plot and Box Plot
-To make the bar plot, follow the code below:
+Before making the plots, note that python has various colors and palettes to choose from for further customization. Additionally, you can save your plot as a value, but it might require some minor code changes. To make the bar plot, follow the code below:
 
 ```
 plt.figure(figsize=(12, 6))
@@ -68,7 +68,7 @@ plt.show()
 ```
 ![Box Plot](/assets/images/top_10_countries_box.png)
 
-To save your plots as a .png or other filetype, you can use the following code:
+To save your plots as a .png or other file type, you can use the following code:
 
 ```
 plt.savefig('top_10_countries_bar.png', format='png')
@@ -76,32 +76,34 @@ plt.savefig('top_10_countries_box.png', format='png')
 ```
 
 ## R
-(write info about data viz in R and the packages that work with it.)
+R is a great tool for data scientists. It is built to interpret data graphically, making it easy to create visualizations with the programming language. R has a base graphical library loaded to make visualizations simply, but this tutorial will focus on one of the optional libraries, ggplot2. Ggplot2 is a coherent system for building and describing graphs. The syntax can be longer than the base R graphics, but it gives more room for creativity and aesthetics. To show the similarities and differences in making visualizations in python vs. R, the below steps will show how to make the same kind of graphs as above in python.
 
 ### Step 1: Load Libraries and Data
-Say something here
+Just as in python, we need to start by loading the libraries we need to make our graphs, and loading the data. The dplyr library makes syntax more straightforward to use, and ggplot2 will help us make our graphs.
 ```
-library(ggplot2)
-library(dplyr)
+library(ggplot2) # graphics package
+library(dplyr) # consistent and clear syntax
 
 data <- read.csv("noodles.csv")
 ```
 ### Step 2: Filter the Data
-say something here
+Once the data is loaded, we need to filter our data. To do this, we will use the %>% or 'pipe' symbol so we don't have to run different lines of code and they can run together.
 ```
 top_10 <- data %>%
-  arrange(desc(`2022`)) %>%
+  arrange(desc(`2022`)) %>% # arrange data in descending order by the 2022 variable
   head(10)
 ```
 
 ### Step 3: Create the Bar and Box Plots
-say something here
+In R, it is best practice to save plots and graphs as values to reference later. The same can be done in python. R has a variety of colors and themes to choose from to further customize your visualizations. Below is the code to make the bar and box plots. Note: when loading data into R, sometimes symbols in variable names will change. Make sure to look at your data before listing variables to best avoid errors.
+
+Create the Bar Plot:
 ```
 bar_plot <- ggplot(top_10, aes(x = reorder(`Country/Region`, -`2022`), y = `2022`)) +
   geom_bar(stat = "identity", fill = "skyblue") +
   labs(title = "Top 10 Countries with Highest Instant Noodles Consumption (2022)",
        x = "Country",
-       y = "Consumption (Billion Servings)") +
+       y = "Consumption") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 print(bar_plot)
@@ -110,32 +112,27 @@ print(bar_plot)
 
 Create the box plot:
 ```
-box_plot <- ggplot(top_10, aes(x = `Country/Region`, y = `2022`)) +
-  geom_boxplot(fill = "lightgreen", color = "darkgreen") +
+box_plot <- ggplot(top_10, aes(y = `X2022`)) +
+  geom_boxplot(fill = "royalblue") +
   labs(title = "Instant Noodles Consumption (2022) for Top 10 Countries",
        x = "Country",
-       y = "Consumption (Billion Servings)") +
+       y = "Consumption") +
   theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) + coord_flip()
 print(box_plot)
 ```
 
 ![Box Plot](/assets/images/top_10_countries_box_r.png)
 
-To save your plots, use the following syntax:
+When saving plots from R as a file, you can customize the size and file type. To save your plots, use the following syntax:
 ```
 png("top_10_countries_bar.png", width = 800, height = 400)
 print(bar_plot)
-dev.off()
 
 png("top_10_countries_box.png", width = 800, height = 400)
 print(box_plot)
 dev.off()
 ```
-
-## Tableau??
-Should I do Tableau or should I not worry about it for word count?
-
 
 ## Compare and Contrast
 
