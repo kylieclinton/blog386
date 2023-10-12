@@ -10,7 +10,7 @@ Data visualization has taken the world by storm in recent years. Everyone wants 
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/lukas-blazek-mcSDtbWXUZU-unsplash.jpg" alt="Data Viz" style="width:800px;"/>
 
-This tutorial will focus on three of those tools and compare setup, syntax, and results so you can decide which tools you would like to use. The three I will be focusing on are Python packages Matplotlib and seaborn and R library ggplot2. For this tutorial, I will be using the [World Instant Noodles Consumption 2022]((https://www.kaggle.com/datasets/fortuneuwha/world-instant-noodles-consumption-2022/)) dataset.
+This tutorial will focus on three of those tools and compare setup, syntax, and results so you can decide which tools you would like to use. The three I will be focusing on are Python packages Matplotlib and seaborn and R library ggplot2. For this tutorial, I will be using the [World Instant Noodles Consumption 2022]({{site.url}}/{{site.baseurl}}/assets/noodles.csv) dataset.
 ## ~Python~
 Python has several packages developed to make data visualization easier. Two of the most popular are Matplotlib and Seaborn. Matplotlib is the base-level package for data visualization in Python. It is highly customizable, can have a steep learning curve, and primarily makes static plots but can also do interactive plots.
 
