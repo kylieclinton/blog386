@@ -79,7 +79,7 @@ plt.savefig('top_10_countries_box.png', format='png')
 R is a great tool for data scientists. It is built to interpret data graphically, making it easy to create visualizations with the programming language. R has a base graphical library loaded to make visualizations simply, but this tutorial will focus on one of the optional libraries, `ggplot2`. `ggplot2` is a coherent system for building and describing graphs. The syntax can be longer than the base R graphics, but it gives more room for creativity and aesthetics. To show the similarities and differences in making visualizations in Python vs. R, the below steps will show how to make the same kind of graphs as above in Python.
 
 ### Step 1: Load Libraries and Data
-Just as in Python, we need to start by loading the libraries we need to make our graphs, and loading the data. The dplyr library makes syntax more straightforward to use, and `ggplot2` will help us make our graphs.
+Just as in Python, we need to start by loading the libraries we need to make our graphs, and loading the data. The `dplyr` library makes syntax more straightforward to use, and `ggplot2` will help us make our graphs.
 ```
 library(ggplot2) # graphics package
 library(dplyr) # consistent and clear syntax
@@ -160,4 +160,4 @@ Let's delve into what makes the Python and R tools we used in the tutorial simil
   - You can easily find help and examples of using the tools.
 
 ## ~Conclusion~
-The tools discussed in this tutorial barely scratches the surface to all the data visualization tools available. Python and R are some of the most common tools used in the data science world, but there is still more to discover. Explore different tools such as Tableau, Power BI, plotly in Python, D3.js, Excel, and QlikView/Qlik Sense. Explore other tools and experiment with the unique features they offer. Continue to practice your Python and R data visualizing skills. The data science world is adapting quickly, so keep learning and innovating!
+The tools discussed in this tutorial barely scratches the surface to all the data visualization tools available. Python and R are some of the most common tools used in the data science world, but there is still more to discover. Explore different tools such as Tableau, Power BI, `plotly` in Python, D3.js, Excel, and QlikView/Qlik Sense. Explore other tools and experiment with the unique features they offer. Continue to practice your Python and R data visualizing skills. The data science world is adapting quickly, so keep learning and innovating!
