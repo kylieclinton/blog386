@@ -8,9 +8,9 @@ image: "assets/images/eberhard-grossgasteiger-zG8VFOg7wgo-unsplash.jpg"
 ## ~Introduction~
 Data visualization has taken the world by storm in recent years. Everyone wants their data to be presented in an engaging, easy-to-understand way. It allows us to analyze complex data, identify patterns, and extract valuable insights. It enables decision-makers to look at the simplified data and quickly make informed and accurate decisions. The boom in data visualization tools has made it easier for coders and non-coders alike to present data in a visually appealing way.
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/lukas-blazek-mcSDtbWXUZU-unsplash.jpg" alt="Data Viz" style="width:400px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/lukas-blazek-mcSDtbWXUZU-unsplash.jpg" alt="Data Viz" style="width:800px;"/>
 
-This tutorial will focus on three of those tools and compare setup, syntax, and results so you can decide which tools you would like to use. The three I will be focusing on are Python packages Matplotlib and seaborn and R library ggplot2. For this tutorial, I will be using the [World Instant Noodles Consumption 2022]([https://statistics.byu.edu](https://www.kaggle.com/datasets/fortuneuwha/world-instant-noodles-consumption-2022/)) dataset.
+This tutorial will focus on three of those tools and compare setup, syntax, and results so you can decide which tools you would like to use. The three I will be focusing on are Python packages Matplotlib and seaborn and R library ggplot2. For this tutorial, I will be using the [World Instant Noodles Consumption 2022]((https://www.kaggle.com/datasets/fortuneuwha/world-instant-noodles-consumption-2022/)) dataset.
 ## ~Python~
 Python has several packages developed to make data visualization easier. Two of the most popular are Matplotlib and Seaborn. Matplotlib is the base-level package for data visualization in Python. It is highly customizable, can have a steep learning curve, and primarily makes static plots but can also do interactive plots.
 
@@ -54,7 +54,7 @@ plt.ylabel('Country/Region')
 plt.grid(axis='x')
 plt.show()
 ```
-![Bar Plot](/assets/images/top_10_countries_bar.png)
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_countries_bar.png" alt="Bar Plot" style="width:800px;"/>
 
 To make the box plot, follow the code below:
 
@@ -66,7 +66,7 @@ plt.xlabel('Consumption in 2022')
 plt.grid(axis='x')
 plt.show()
 ```
-![Box Plot](/assets/images/top_10_countries_box.png)
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_countries_box.png" alt="Box Plot" style="width:800px;"/>
 
 To save your plots as a .png or other file type, you can use the following code:
 
@@ -108,7 +108,7 @@ bar_plot <- ggplot(top_10, aes(x = reorder(`Country/Region`, -`2022`), y = `2022
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 print(bar_plot)
 ```
-![Bar Plot](/assets/images/top_10_countries_bar_r.png)
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_countries_bar_r.png" alt="Bar Plot" style="width:800px;"/>
 
 Create the box plot:
 ```
@@ -122,7 +122,7 @@ box_plot <- ggplot(top_10, aes(y = `X2022`)) +
 print(box_plot)
 ```
 
-![Box Plot](/assets/images/top_10_countries_box_r.png)
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_countries_box_r.png" alt="Box Plot" style="width:800px;"/>
 
 When saving plots from R as a file, you can customize the size and file type. To save your plots, use the following syntax:
 ```
