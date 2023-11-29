@@ -21,7 +21,7 @@ image: "assets/images/erik-mclean-8SeJUmfahu0-unsplash.jpg"
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_mentions.png" alt="Data Viz" style="width:300px;"/>
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_time.png" alt="Data Viz" style="width:900px;" style="height:300px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_time.png" alt="Data Viz" style="width:600px;" style="height:400px;"/>
 
 
 ## ~Conclusion~
