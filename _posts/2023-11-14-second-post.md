@@ -11,13 +11,13 @@ image: "assets/images/erik-mclean-8SeJUmfahu0-unsplash.jpg"
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/of_avengers_time_2.png" alt="Data Viz" style="width:900px;" style="height:300px;"/>
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/og_avengers.png" alt="Data Viz" style="width:800px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/og_avengers.png" alt="Data Viz" style="width:600px;"/>
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/og_avengers_time.png" alt="Data Viz" style="width:900px;" style="height:300px;"/>
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/spiderman_time.png" alt="Data Viz" style="width:900px;" style="height:300px;"/>
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10.png" alt="Data Viz" style="width:800px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10.png" alt="Data Viz" style="width:600px;"/>
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_mentions.png" alt="Data Viz" style="width:300px;"/>
 
