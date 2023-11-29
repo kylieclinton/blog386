@@ -6,7 +6,7 @@ description: An EDA of the Marvel API.
 image: "assets/images/erik-mclean-8SeJUmfahu0-unsplash.jpg"
 --- 
 ## ~Introduction~
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/current_mentions.png" alt="Data Viz" style="width:400px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/current_mentions.png" alt="Data Viz" style="width:300px;"/>
 
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/of_avengers_time_2.png" alt="Data Viz" style="width:900px;"/>
@@ -19,9 +19,9 @@ image: "assets/images/erik-mclean-8SeJUmfahu0-unsplash.jpg"
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10.png" alt="Data Viz" style="width:800px;"/>
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_mentions.png" alt="Data Viz" style="width:400px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_mentions.png" alt="Data Viz" style="width:300px;"/>
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_time.png" alt="Data Viz" style="width:900px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_time.png" alt="Data Viz" style="width:900px;" style="height:300px;"/>
 
 
 ## ~Conclusion~
