@@ -19,7 +19,7 @@ image: "assets/images/erik-mclean-8SeJUmfahu0-unsplash.jpg"
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10.png" alt="Data Viz" style="width:800px;"/>
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_mentions.png" alt="Data Viz" style="width:800px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_mentions.png" alt="Data Viz" style="width:400px;"/>
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_time.png" alt="Data Viz" style="width:800px;"/>
 
