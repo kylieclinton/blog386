@@ -3,7 +3,7 @@ layout: post
 title:  "Marvel EDA Intro"
 author: Kylie Clinton
 description: An Intro to EDA of the Marvel API.
-image: "assets/images/erik-mclean-8SeJUmfahu0-unsplash.jpg"
+image: "assets/images/joel-muniz-yRQ6EL25vxU-unsplash.jpg"
 --- 
 ## ~Introduction~
 Exploratory Data Analyses(EDA) are interesting and informative ways to gather and understand data. There are many different ways to collect data to explore, such as APIs, web scraping, and finding established datasets. I wanted to do an EDA on a topic interesting to me with lots of insights to be gained. After searching for interesting data I could use, I found an API from Marvel that piqued my interest. I am not a comic book reader, but I have enjoyed the Marvel Cinematic Universe for the most part. Looking through what the API offered gave me some initial questions I decided to explore.
