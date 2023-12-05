@@ -19,11 +19,12 @@ Before getting into my insights from my EDA, <a href="https://github.com/kyliecl
 To answer my questions, I cleaned and manipulated the data from the [Marvel API](https://developer.marvel.com/). I made three dataframes, one with the uncleaned data, one with the cleaned data, and one with extracted data for time analysis. I used the latter two dataframes in my EDA. The cleaned dataframe gave rows of character names, values for comic, story, and event mentions, and lists of the comics, stories, and events where the character is mentioned. The manipulated data extracted years from the comics list, creating the new dataframe with character names, the years, and values for mentions in each year.
 
 The visualizations I made helped to answer my questions more clearly. The first ones I made were bar graphs from the cleaned dataset. I wanted insights into how frequently the original Avengers Characters were mentioned throughout comics, and I wanted the same for the top 10 most popular characters.
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/og_avengers.png" alt="Data Viz" style="width:600px;"/>
+
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/og_avengers.png" alt="Data Viz" style="width:1100px;"/>
 
 For my Avengers visualizations, the most popular character mentions were for Iron Man and Captain America. That wasn't surprising for me as they are some of the most common Marvel Characters I knew growing up. The movies and shows with those characters also proved to me that they are the most popular Avengers from the original comic group.
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10.png" alt="Data Viz" style="width:600px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10.png" alt="Data Viz" style="width:1100px;"/>
 
 For the Top 10 Characters Story mentions, I needed to run a sort on the data. When the bar graph appeared, I wasn't surprised by the results. From my personal knowledge, Peter Parker as Spider-Man has had more movies and shows and comics (according to the data) than other superheroes. I have heard more debates over which actors played Peter Parker best than other characters. His popularity in the comics wasn't surprising to me. There was more I wanted to learn about Spider-Man's presence in Marvel comics over time and how his various characters changed comic frequency.
 
