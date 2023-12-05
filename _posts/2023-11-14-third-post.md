@@ -35,7 +35,7 @@ As time continues there are more Spider-Man characters being written. The popula
 
 As an additional part of my EDA, I wanted to see what numbers Peter Parker as Spider-Man had for mentions. Below shows what the code returned.
 ```
-print(f"Marvel Character appearing in most number of stories and comics:\nName: {df_sorted['name'].iloc[0]}\nComics: {df_sorted['comics_available'].iloc[0]}\nStories: {df_sorted['stories_available'].iloc[0]}\nTotal Mentions: {top_10_characters['Spider-Man (Peter Parker)'].cumsum().iloc[-1]}")
+print(f"Marvel Character appearing in most stories and comics:\nName: {df_sorted['name'].iloc[0]}\nComics: {df_sorted['comics_available'].iloc[0]}\nStories: {df_sorted['stories_available'].iloc[0]}\nTotal Mentions: {top_10_characters['Spider-Man (Peter Parker)'].cumsum().iloc[-1]}")
 ```
 
 ```
