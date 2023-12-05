@@ -39,7 +39,7 @@ print(f"Marvel Character appearing in most stories and comics:\nName: {df_sorted
 ```
 
 ```
-Marvel Character appearing in most number of stories and comics:
+Marvel Character appearing in most stories and comics:
 Name: Spider-Man (Peter Parker)
 Comics: 4402
 Stories: 6385
