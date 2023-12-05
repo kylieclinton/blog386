@@ -1,4 +1,4 @@
----
+a---
 layout: post
 title:  "Marvel EDA Intro"
 author: Kylie Clinton
@@ -13,7 +13,7 @@ Exploratory Data Analyses(EDA) are interesting and informative ways to gather an
 
 With these questions in mind, I dove into my EDA.
 
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/Marvel_Logo.svg.png" alt=""  style="width:600px;"/>
+![Figure]({{site.url}}/{{site.baseurl}}/assets/images/Marvel_Logo.svg.png)
 
 ## ~Description~
 Before this EDA began, I was a beginner to web scraping and making API requests. It took some time and some helpful Google searches to write my requests code, but in the end, I was able to get an inital dataset. I drew from the Characters endpoint of the Marvel API. Since my questions were focused around Character popularity, this seemed like the best option. To clean my data, I kept the columns with information I felt would be useful in my EDA while discarding the others. I also had to figure out how to best access all the data in nested dictionaries. The last step for me was to make sure any NaN's were changed to 0. This process created my first dataframe for my EDA.
