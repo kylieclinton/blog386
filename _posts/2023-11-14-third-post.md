@@ -47,23 +47,44 @@ Stories: 6385
 Total Mentions: 19
 ```
 
+As I continued to explore my data, I wanted to see how comic book characters change over time. To accomplish this, I looked at the earliest year in my dataset and which characters were first written. The resulting table is shown below:
+
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/first_mentions.png" alt="Data Viz" style="width:300px;"/>
+
+I found it interesting that I didn't recognize any of the characters written in 1939. Time has clearly changed character popularity.
+
+I did the same analysis for the top current mentions of 2023, and below is that resulting table:
+
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/current_mentions.png" alt="Data Viz" style="width:300px;"/>
+
+Since I am not a comic book reader, not all of the characters are familiar to me. However, Spider-Man is still getting new comic books, and new characters are still being introduced. None of the first Marvel characters are having comic books written about them anymore. The trends are changing over time, with some characters staying consistent in popularity.
+
+Looking back to the original avengers, I wanted to see the trends in their popularity as individual characters and as a combined Avengers entity. Like I did with the Spider-Man data, I made plots of the avengers over time to see trends in when comic books were written about them.
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/of_avengers_time_2.png" alt="Data Viz" style="width:1100px;"/>
 
+In this visualization, we can see the original avengers begin to emerge as characters in the early 1960s. With several points for each character showing no increase in mentions, there are periods of time where each character has not been as popular and had no new comics about them. The main increase in comic book popularity for these characters shows around the time when Marvel came out with movies for them and the general population was introduced to the superheroes.
 
+The next line plot uses the same data as before and includes other names for those original characters. Like Spider-Man's plot, I used the combined character values and did a cumulative sum over time to show how general avenger trends have increased over time. The movies brought the sharpest increase of character popularity and has helped them continue to increase over time.
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/og_avengers_time.png" alt="Data Viz" style="width:1100px;"/>
 
 
-
-
+Just as with the original Avengers, I looked at the top 10 characters and the comic book trends over time. There was more interesting variety with these characters. While all of the characters show a high total, there is variation in the popularity over time.
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_mentions.png" alt="Data Viz" style="width:300px;"/>
 
+The last insight I hoped to gain was which years the top 10 popular characters peaked in popularity. The table below shows which year they have the most mentions and how many comic books they were mentioned in. There were several interesting insights here which I will go into in the next section.
+
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_time.png" alt="Data Viz" style="width:1100px;"/>
 
-## ~Summary~
-
+## ~Top Insights Summary~
+- While Spider-Man was shown to be the most popular comic book character over time, it was interesting to see how the variety in who Spider-Man, Spider-Girl, Spider-Ham, etc. has helped maintain that popularity in recent years.
+- The original Marvel Universe characters are no longer mentioned in comic books.
+- The Fantastic Four gained quick popularity in 2004 and got movies and many comic books, but haven't made any comic book appearances since.
+- Daredevil was at his most popular in 1963 and was so popular back then that he is in the top 10 most mentioned characters in the Marvel Universe.
+- Marvel continues to develop new characters and superheroes, affecting the trends in popularity over time as older and less popular characters are phased out.
 
 ## ~Conclusion~
+
+My EDA of the Marvel comic book character data was insightful. There were some things I didn't know, such as how long certain characters have had comic books written about them, and things that I believed and were confirmed, like how Iron Man and Captain America are the most popular Avengers. Like most things in society, trends change over time, and Marvel isn't exempt from those changes. There are lots of insights to gain about popularity of characters within the Marvel Universe and events surrounding them. This EDA was meant to dig into the characters over time and general popularity. There is more to be learned from the Marvel Character API. I feel like I have only scratched the surface, and can't wait to see what insights time will bring.
