@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Marvel EDA Intro"
+title:  "Collecting Marvel Data For an EDA"
 author: Kylie Clinton
-description: An Intro to EDA of the Marvel API.
+description: An introduction to the EDA process of the Marvel API.
 image: "assets/images/joel-muniz-yRQ6EL25vxU-unsplash.jpg"
 --- 
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/Marvel_Logo.svg.png" alt="" style="width:600px;"/>
 
-## ~Introduction~
+## **Introduction**
 Exploratory Data Analyses(EDA) are interesting and informative ways to gather and understand data. There are many different ways to collect data to explore, such as APIs, web scraping, and finding established datasets. I wanted to do an EDA on a topic interesting to me with lots of insights to be gained. After searching for interesting data I could use, I found an API from Marvel that piqued my interest. I am not a comic book reader, but I have enjoyed the Marvel Cinematic Universe for the most part. The Avengers saga is what really piqued my interest in the Marvel Universe. The stories and characters were engaging, and the progression of films was exciting to discuss and watch with friends and family. Looking through what the API offered gave me some initial questions I decided to explore.
 
 "What are the trends in character popularity within the Marvel Universe, and how have these trends evolved over time?"
@@ -93,6 +93,6 @@ Because of the nature of data collection, ethics needed to be taken into conside
 Finding, cleaning, and exploring the data collected in the Marvel API was an interesting process and a great learning experience. I was able to begin the process of answering my EDA questions and explore a topic I am interested in. Through coding and personal reflection, I was able to start assembling Avengers myself.
 
 # Code and Data Links #
-To see my data, clock here: <a href= "https://github.com/kylieclinton/edaproject/blob/0db43d2e7688334e079df413c152c07b1b66e171/marvel.csv" target="_blank">Marvel Data</a>
+To see my data, click here: <a href= "https://github.com/kylieclinton/edaproject/blob/0db43d2e7688334e079df413c152c07b1b66e171/marvel.csv" target="_blank">Marvel Data</a>
 
 To see how I analyzed my data, click here: <a href = "https://github.com/kylieclinton/edaproject.git" targer="_blank">Code Repository</a>
