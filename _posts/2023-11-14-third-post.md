@@ -5,16 +5,16 @@ author: Kylie Clinton
 description: An EDA of the Marvel API.
 image: "assets/images/erik-mclean-8SeJUmfahu0-unsplash.jpg"
 --- 
+# Add more code snippets and better explanations of graphs. Explain first_mentions table better. Check for typos
+
 ## **Introduction** ##
 The Marvel Api provides insights into the Marvel Comic Universe and its characters. The data contains answers to several questions I found when looking at the API general information. My previous post <a href="https://kylieclinton.github.io/blog386/2023/11/10/second-post.html" target="_blank">Marvel EDA Intro</a> discussed in more detail my motivation behind the questions I developed and why I chose this dataset. To paraphrase, I grew up enjoying Marvel movies and was curious how the comics would affect movie production. I was also curious about popular characters and how popular they have been in comics over time. The questions I formed were as follows:
  - What are the trends in character popularity within the Marvel Universe, and how have these trends evolved over time?
  - What insights can be gained regarding the changing popularity with different characters and events within the Marvel Universe?
 
-The rest of this post delves into my findings from my exploratory data analysis (EDA).
+The rest of this post delves into my findings from my exploratory data analysis (EDA). Before getting into my insights from my EDA, <a href="https://github.com/kylieclinton/edaproject.git" target="_blank">here</a> is a link to my GitHub repository with the data and .ipynb file with the code I wrote.
 
 ## **Findings**
-
-Before getting into my insights from my EDA, <a href="https://github.com/kylieclinton/edaproject.git" target="_blank">here</a> is a link to my GitHub repository with the data and .ipynb file with the code I wrote.
 
 To answer my questions, I cleaned and manipulated the data from the [Marvel API](https://developer.marvel.com/). I made three dataframes, one with the uncleaned data, one with the cleaned data, and one with extracted data for time analysis. I used the latter two dataframes in my EDA. The cleaned dataframe gave rows of character names, values for comic, story, and event mentions, and lists of the comics, stories, and events where the character is mentioned. The manipulated data extracted years from the comics list, creating the new dataframe with character names, the years, and values for mentions in each year.
 
@@ -32,7 +32,7 @@ The Spider-Man character and the variations like Spider-Girl and Spider-Ham in t
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/spiderman_time.png" alt="Data Viz" style="width:1100px;"/>
 
-As time continues there are more Spider-Man characters being written. The popularity surrounding this character seems to continue to increase. The only stagnant parts of Spider-Man's comic book popularity is shortly after he came out as a character in 19623, from 1964 to 1982 and 1983 to 1989. After 1989 the number of Spider-Man comics or comics with the character has skyrocketed. It's no wonder he is the most popular character.
+As time continues there are more Spider-Man characters being written. The popularity surrounding this character seems to continue to increase. The only stagnant parts of Spider-Man's comic book popularity is shortly after he came out as a character in 1963, from 1964 to 1982 and 1983 to 1989. After 1989 the number of Spider-Man comics or comics with the character has skyrocketed. It's no wonder he is the most popular character.
 
 As an additional part of my EDA, I wanted to see what numbers Peter Parker as Spider-Man had for mentions. Below shows what the code returned.
 ```
@@ -42,8 +42,8 @@ print(f"Marvel Character appearing in most stories and comics:\nName: {df_sorted
 ```
 Marvel Character appearing in most stories and comics:
 Name: Spider-Man (Peter Parker)
-Comics: 4402
-Stories: 6385
+Comics: 4405
+Stories: 6388
 Total Mentions: 19
 ```
 
