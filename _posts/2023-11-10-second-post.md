@@ -18,7 +18,7 @@ Exploratory Data Analyses(EDA) are interesting and informative ways to gather an
 
 With these questions in mind, I dove into my EDA.
 
-## ~Description~
+## **Description**
 Before this EDA began, I was a beginner to web scraping and making API requests. It took some time and some helpful Google searches to write my requests code, but in the end, I was able to get an inital dataset. I drew from the Characters endpoint of the Marvel API. Since my questions were focused around Character popularity, this seemed like the best option. To clean my data, I kept the columns with information I felt would be useful in my EDA while discarding the others. I also had to figure out how to best access all the data in nested dictionaries. The last step for me was to make sure any NaN's were changed to 0. This process created my first dataframe for my EDA. Below shows some of the code I wrote to collect and clean this data.
 
 ```
@@ -86,13 +86,13 @@ sums = years_df.sum(axis=1)
 
 This process concluded creating my second dataframe.
 
-## ~Explanation~
+## **Explanation**
 Because of the nature of data collection, ethics needed to be taken into consideration. I checked the policy for Marvel's API usage to make sure I wouldn't violate any. I also made sure to take time and consider the purpose behind my EDA and that it was ethical. I made sure that the data I used would be protected through my API keys, which were included in my .gitignore file. I also wanted to make sure that the data I used would stay within the context in which it was meant for. No ethical lines were crossed during my EDA as it was taken into consideration throughout the process.
 
-## ~Conclusion~
+## **Conclusion**
 Finding, cleaning, and exploring the data collected in the Marvel API was an interesting process and a great learning experience. I was able to begin the process of answering my EDA questions and explore a topic I am interested in. Through coding and personal reflection, I was able to start assembling Avengers myself.
 
-# Code and Data Links #
+### **Code and Data Links** ###
 To see my data, click here: <a href= "https://github.com/kylieclinton/edaproject/blob/0db43d2e7688334e079df413c152c07b1b66e171/marvel.csv" target="_blank">Marvel Data</a>
 
 To see how I analyzed my data, click here: <a href = "https://github.com/kylieclinton/edaproject.git" targer="_blank">Code Repository</a>
