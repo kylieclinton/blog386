@@ -5,14 +5,14 @@ author: Kylie Clinton
 description: An EDA of the Marvel API.
 image: "assets/images/erik-mclean-8SeJUmfahu0-unsplash.jpg"
 --- 
-## ~Introduction~
+## **Introduction** ##
 The Marvel Api provides insights into the Marvel Comic Universe and its characters. The data contains answers to several questions I found when looking at the API general information. My previous post <a href="https://kylieclinton.github.io/blog386/2023/11/10/second-post.html" target="_blank">Marvel EDA Intro</a> discussed in more detail my motivation behind the questions I developed and why I chose this dataset. To paraphrase, I grew up enjoying Marvel movies and was curious how the comics would affect movie production. I was also curious about popular characters and how popular they have been in comics over time. The questions I formed were as follows:
  - What are the trends in character popularity within the Marvel Universe, and how have these trends evolved over time?
  - What insights can be gained regarding the changing popularity with different characters and events within the Marvel Universe?
 
 The rest of this post delves into my findings from my exploratory data analysis (EDA).
 
-## ~Findings~
+## **Findings**
 
 Before getting into my insights from my EDA, <a href="https://github.com/kylieclinton/edaproject.git" target="_blank">here</a> is a link to my GitHub repository with the data and .ipynb file with the code I wrote.
 
@@ -78,13 +78,13 @@ The last insight I hoped to gain was which years the top 10 popular characters p
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_time.png" alt="Data Viz" style="width:1100px;"/>
 
-## ~Top Insights Summary~
+## **Top Insights Summary**
 - While Spider-Man was shown to be the most popular comic book character over time, it was interesting to see how the variety in who Spider-Man, Spider-Girl, Spider-Ham, etc. has helped maintain that popularity in recent years.
 - The original Marvel Universe characters are no longer mentioned in comic books.
 - The Fantastic Four gained quick popularity in 2004 and got movies and many comic books, but haven't made any comic book appearances since.
 - Daredevil was at his most popular in 1963 and was so popular back then that he is in the top 10 most mentioned characters in the Marvel Universe.
 - Marvel continues to develop new characters and superheroes, affecting the trends in popularity over time as older and less popular characters are phased out.
 
-## ~Conclusion~
+## **Conclusion**
 
 My EDA of the Marvel comic book character data was insightful. There were some things I didn't know, such as how long certain characters have had comic books written about them, and things that I believed and were confirmed, like how Iron Man and Captain America are the most popular Avengers. Like most things in society, trends change over time, and Marvel isn't exempt from those changes. There are lots of insights to gain about popularity of characters within the Marvel Universe and events surrounding them. This EDA was meant to dig into the characters over time and general popularity. There is more to be learned from the Marvel Character API. I feel like I have only scratched the surface, and can't wait to see what insights time will bring.
