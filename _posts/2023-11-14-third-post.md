@@ -124,7 +124,7 @@ result_df = result_df.sort_values(by='Max_Mentions', ascending=False).reset_inde
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_mentions.png" alt="Data Viz" style="width:300px;"/>
 
 ## **Top Insights Summary**
-- While Spider-Man was shown to be the most popular comic book character over time, it was interesting to see how the variety in who Spider-Man, Spider-Girl, Spider-Ham, etc. has helped maintain that popularity in recent years.
+- While Spider-Man was shown to be the most popular comic book character over time, it was interesting to see how the variety in who Spider-Man, Spider-Girl, Spider-Ham, etc. are has helped maintain that popularity in recent years.
 - The original Marvel Universe characters are no longer mentioned in comic books.
 - The Fantastic Four gained quick popularity in 2004 and got movies and many comic books, but haven't made any comic book appearances since.
 - Daredevil was at his most popular in 1963 and was so popular back then that he is in the top 10 most mentioned characters in the Marvel Universe.
