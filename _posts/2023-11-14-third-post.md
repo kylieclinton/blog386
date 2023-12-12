@@ -109,7 +109,7 @@ Just as with the original Avengers, I looked at the top 10 characters and the co
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_time.png" alt="Data Viz" style="width:1100px;"/>
 
-The last insight I hoped to gain was which years the top 10 popular characters peaked in popularity. The table below shows which year they have the most mentions and how many comic books they were mentioned in. There were several interesting insights here which I will go into in the next section.  My code also wasn't as need as it could be since I hard coded removing certain rows that had repeat characters. While there are improvements in my code to be made, this is the best I could come up with and feel it worked well enough to answer my question.
+The last insight I hoped to gain was which years the top 10 popular characters peaked in popularity. The table below shows which year they have the most mentions and how many comic books they were mentioned in. There were several interesting insights here which I will go into in the next section.  My code also wasn't as neat as it could be since I hard coded removing certain rows that had repeat characters. While there are improvements in my code to be made, this is the best I could come up with and feel it worked well enough to answer my question.
 
 ```
 max_mentions_top_10 = top_10_characters.idxmax(axis=1)
