@@ -5,10 +5,8 @@ author: Kylie Clinton
 description: An EDA of the Marvel API.
 image: "assets/images/erik-mclean-8SeJUmfahu0-unsplash.jpg"
 --- 
-# Add more code snippets and better explanations of graphs. Explain first_mentions table better. Check for typos
-
 ## **Introduction** ##
-The Marvel Api provides insights into the Marvel Comic Universe and its characters. The data contains answers to several questions I found when looking at the API general information. My previous post <a href="https://kylieclinton.github.io/blog386/2023/11/10/second-post.html" target="_blank">Marvel EDA Intro</a> discussed in more detail my motivation behind the questions I developed and why I chose this dataset. To paraphrase, I grew up enjoying Marvel movies and was curious how the comics would affect movie production. I was also curious about popular characters and how popular they have been in comics over time. The questions I formed were as follows:
+The Marvel API provides insights into the Marvel Comic Universe and its characters. The data contains answers to several questions I found when looking at the API general information. My previous post <a href="https://kylieclinton.github.io/blog386/2023/11/10/second-post.html" target="_blank">Marvel EDA Intro</a> discussed in more detail my motivation behind the questions I developed and why I chose this dataset. To paraphrase, I grew up enjoying Marvel movies and was curious how the comics would affect movie production. I was also curious about popular characters and how popular they have been in comics over time. The questions I formed were as follows:
  - What are the trends in character popularity within the Marvel Universe, and how have these trends evolved over time?
  - What insights can be gained regarding the changing popularity with different characters and events within the Marvel Universe?
  - Who is the most popular character and how has that popularity changed over time?
@@ -134,4 +132,4 @@ result_df = result_df.sort_values(by='Max_Mentions', ascending=False).reset_inde
 
 ## **Conclusion**
 
-My EDA of the Marvel comic book character data was insightful. There were some things I didn't know, such as how long certain characters have had comic books written about them, and things that I believed and were confirmed, like how Iron Man and Captain America are the most popular Avengers. Like most things in society, trends change over time, and Marvel isn't exempt from those changes. There are lots of insights to gain about popularity of characters within the Marvel Universe and events surrounding them. This EDA was meant to dig into the characters over time and general popularity. There is more to be learned from the Marvel Character API. I feel like I have only scratched the surface, and can't wait to see what insights time will bring.
+My EDA of the Marvel comic book character data was insightful. There were some things I didn't know, such as how long certain characters have had comic books written about them, and things that I believed and were confirmed, like how Iron Man and Captain America are the most popular Avengers. Like most things in society, trends change over time, and Marvel isn't exempt from those changes. There are lots of insights to gain about popularity of characters within the Marvel Universe and events surrounding them. This EDA was meant to dig into the characters over time and general popularity. There is more to be learned from the Marvel Character API. I feel like I have only scratched the surface, and can't wait to see what insights future exploration will reveal.
