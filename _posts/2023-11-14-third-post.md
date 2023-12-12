@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Marvel EDA"
+title:  "Exploring Marvel's Universe of Characters"
 author: Kylie Clinton
 description: An Exploratory Data Analysis of the Marvel Comic Character API.
 image: "assets/images/erik-mclean-8SeJUmfahu0-unsplash.jpg"
