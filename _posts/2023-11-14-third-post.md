@@ -26,11 +26,11 @@ The visualizations I made helped to answer my questions more clearly. The first 
 
 For my Avengers visualizations, the most popular character mentions were for Iron Man and Captain America. That wasn't surprising for me as they are some of the most common Marvel Characters I knew growing up. The movies and shows with those characters also proved to me that they are the most popular Avengers from the original comic group. The frequency on the bar charts come from the 'stories_available' column in the dataframe.
 
-'''
+```
 avengers = ["Iron Man", "Thor", "Hank Pym", "Wasp", "Hulk", "Captain America", "Avengers"]
 sns.barplot(data=df, x="name", y="stories_available", 
 order=avengers, palette='Spectral').set_title("Frequency of Original Avengers Characters in Comics")
-'''
+```
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10.png" alt="Data Viz" style="width:1100px;"/>
 
@@ -40,13 +40,13 @@ The Spider-Man character and the variations like Spider-Girl and Spider-Ham in t
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/spiderman_time.png" alt="Data Viz" style="width:1100px;"/>
 
-'''
+```
 #identify as many Spider-Man characters in the dataset
 peter = years_df.loc[ ['Peter Parker','Spider-Man (Peter Parker)','Spider-Man (Miles Morales)', "Spider-Man (2099)", "Spider-Man (Noir)", "Spider-Man (1602)", "Spider-Man (Ultimate)", "Spider-Man (Ai Apaec)", "Spider-Man (House of M)", "Spider-Man (Ben Reilly)","Spider-Ham (Larval Earth)", "Spider-Girl (Anya Corazon)", "Spider-Woman (Jessica Drew)","Spider-Man (Marvel Zombies)","Spider-Man (Takuya Yamashiro)", "Spider-Woman (Mattie Franklin)", "Spider-Woman (Charlotte Witter)", "Spider-Man (LEGO Marvel Super Heroes)","Spider-Man (Marvel: Avengers Alliance)", "Ultimate Spider-Man (USM)"] ]
 combined_spiderman = peter.sum(axis=0)
 cumulative_sum = combined_spiderman.cumsum()
 plt.plot(combined_spiderman.index, cumulative_sum.values, color = '#e2514a', linewidth=3)
-'''
+```
 
 As time continues there are more Spider-Man characters being written. The popularity surrounding this character seems to continue to increase. The only stagnant parts of Spider-Man's comic book popularity is shortly after he came out as a character in 1963, from 1964 to 1982 and 1983 to 1989. After 1989 the number of Spider-Man comics or comics with the character has skyrocketed. It's no wonder he is the most popular character.
 
@@ -68,12 +68,12 @@ As I continued to explore my data, I wanted to see how comic book characters cha
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/first_mentions.png" alt="Data Viz" style="width:300px;"/>
 
-'''
+```
 first_characters = years_df[years_df['1939'] != 0]['1939']
 #make these characters into a table
 results_df = pd.DataFrame({'Character': first_characters.index, 'Mentions': first_characters.values})
 results_df = results_df.sort_values(by='Mentions', ascending=False).reset_index(drop=True)
-'''
+```
 
 I found it interesting that I didn't recognize any of the characters written in 1939. Time has clearly changed character popularity.
 
@@ -81,11 +81,11 @@ I did the same analysis for the top current mentions of 2023 to better understan
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/current_mentions.png" alt="Data Viz" style="width:300px;"/>
 
-'''
+```
 current_characters = years_df[years_df['2023'] > 4]['2023']
 c_results_df = pd.DataFrame({'Character': current_characters.index, 'Mentions': current_characters.values})
 c_results_df = c_results_df.sort_values(by='Mentions', ascending=False).reset_index(drop=True)
-'''
+```
 
 Since I am not a comic book reader, not all of the characters are familiar to me. However, Spider-Man is still getting new comic books, and new characters are still being introduced. None of the first Marvel characters are having comic books written about them anymore. The trends are changing over time, with some characters staying consistent in popularity.
 
@@ -93,12 +93,12 @@ Looking back to the original avengers, I wanted to see the trends in their popul
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/of_avengers_time_2.png" alt="Data Viz" style="width:1100px;"/>
 
-'''
+```
 colors = sns.color_palette("Spectral", n_colors=len(top_10_characters.columns))
 for character, color in zip(top_10_characters, colors):
     cumulative_sum = top_10_characters[character].cumsum()
     plt.plot(cumulative_sum.index, cumulative_sum.values, label=character, color=color, linewidth=3)
-'''
+```
 
 In this visualization, we can see the original avengers begin to emerge as characters in the early 1960s. With several points for each character showing no increase in mentions, there are periods of time where each character has not been as popular and had no new comics about them. The main increase in comic book popularity for these characters shows around the time when Marvel came out with movies for them and the general population was introduced to the superheroes.
 
@@ -113,7 +113,7 @@ Just as with the original Avengers, I looked at the top 10 characters and the co
 
 The last insight I hoped to gain was which years the top 10 popular characters peaked in popularity. The table below shows which year they have the most mentions and how many comic books they were mentioned in. There were several interesting insights here which I will go into in the next section.  My code also wasn't as need as it could be since I hard coded removing certain rows that had repeat characters. While there are improvements in my code to be made, this is the best I could come up with and feel it worked well enough to answer my question.
 
-'''
+```
 max_mentions_top_10 = top_10_characters.idxmax(axis=1)
 max_mentions_per_character = top_10_characters.max(axis=1)
 result_df = pd.DataFrame({'Character': max_mentions_top_10.values, 'Year': max_mentions_top_10.index, 'Max_Mentions': max_mentions_per_character.values})
@@ -121,7 +121,7 @@ result_df = result_df[result_df['Max_Mentions'] > 1].reset_index(drop=True)
 #remove row 0, 2, 5, 8, 10, 13, 14, 15 from the df
 result_df = result_df.drop([1, 3, 6, 7, 10, 12, 15, 16, 17])
 result_df = result_df.sort_values(by='Max_Mentions', ascending=False).reset_index(drop=True)
-'''
+```
 
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/top_10_mentions.png" alt="Data Viz" style="width:300px;"/>
 
