@@ -133,3 +133,5 @@ result_df = result_df.sort_values(by='Max_Mentions', ascending=False).reset_inde
 ## **Conclusion**
 
 My EDA of the Marvel comic book character data was insightful. There were some things I didn't know, such as how long certain characters have had comic books written about them, and things that I believed and were confirmed, like how Iron Man and Captain America are the most popular Avengers. Like most things in society, trends change over time, and Marvel isn't exempt from those changes. There are lots of insights to gain about popularity of characters within the Marvel Universe and events surrounding them. This EDA was meant to dig into the characters over time and general popularity. There is more to be learned from the Marvel Character API. I feel like I have only scratched the surface, and can't wait to see what insights future exploration will reveal.
+
+To explore the data for yourself, check out my <a href="https://kylieclinton-edaproject-dashboard-otcf8m.streamlit.app/" target="_blank">Streamlit App</a>
