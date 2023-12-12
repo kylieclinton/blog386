@@ -2,7 +2,7 @@
 layout: post
 title:  "Marvel EDA"
 author: Kylie Clinton
-description: An EDA of the Marvel API.
+description: An Exploratory Data Analysis of the Marvel Comic Character API.
 image: "assets/images/erik-mclean-8SeJUmfahu0-unsplash.jpg"
 --- 
 ## **Introduction** ##
