@@ -51,6 +51,9 @@ for entry in data:
 
 df = pd.DataFrame(characters)
 ```
+Below shows some of the output from this first dataframe.
+
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/intro_head.png" alt="" style="width:600px;"/>
 
 I made another dataframe that drew from a list within the first dataframe showing the titles and years of the comics. I extracted the years from each and made my new dataframe show the Character's name followed by columns for each year Marvel has made comic books. If a character didn't have a comic in a year, I made sure the dataframe showed 0 instead of NaN after cleaning. The year columns a character had comics in were made to be counts instead of the name of the comic. Below is some of the code I used to create this dataframe.
 
