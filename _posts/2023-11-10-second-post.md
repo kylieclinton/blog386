@@ -87,7 +87,7 @@ years_df = years_df.reindex(sorted(years_df.columns, key=lambda x: int(x) if x.i
 sums = years_df.sum(axis=1)
 ```
 
-This process concluded creating my second dataframe. Below is some of the output for the years dataframe. Note that there are too many columns to show all the data. Years with no mentions is 0 and any mentions is a count.
+This process concluded creating my second dataframe. Below is some of the output for the years dataframe.
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/years_head.png" alt="" style="width:800px;"/>
 
 ## **Explanation**
