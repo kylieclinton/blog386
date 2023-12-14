@@ -88,6 +88,7 @@ sums = years_df.sum(axis=1)
 ```
 
 This process concluded creating my second dataframe. Below is some of the output for the years dataframe.
+
 <img src="{{site.url}}/{{site.baseurl}}/assets/images/years_head.png" alt="" style="width:800px;"/>
 
 ## **Explanation**
