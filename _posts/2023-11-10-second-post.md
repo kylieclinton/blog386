@@ -88,7 +88,7 @@ sums = years_df.sum(axis=1)
 ```
 
 This process concluded creating my second dataframe. Below is some of the output for the years dataframe. Note that there are too many columns to show all the data. Years with no mentions is 0 and any mentions is a count.
-<img src="{{site.url}}/{{site.baseurl}}/assets/images/years_head.png" alt="" style="width:600px;"/>
+<img src="{{site.url}}/{{site.baseurl}}/assets/images/years_head.png" alt="" style="width:800px;"/>
 
 ## **Explanation**
 Because of the nature of data collection, ethics needed to be taken into consideration. I checked the policy for Marvel's API usage to make sure I wouldn't violate any. I also made sure to take time and consider the purpose behind my EDA and that it was ethical. I made sure that the data I used would be protected through my API keys, which were included in my .gitignore file. I also wanted to make sure that the data I used would stay within the context in which it was meant for. No ethical lines were crossed during my EDA as it was taken into consideration throughout the process.
